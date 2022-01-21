@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+}
+  
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+  
+.table td,
+.table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+.table tr:hover {
+    background-color: #ddd;
+}
+  
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 150px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+}
+  
+.input {
+    display: flex;
+}
+  
+.input input {
+    margin-right: 5px;
+    padding: 0 5px 0 5px;
+}
+  
+.input button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+select {
+    padding: 5px 10px;
+}
+
+.output{
+    background: #78866B;
+    color: white;   
+}
+
+.output > pre{
+    padding:  10px 50px 50px 50px;
+    font-size: 15px;
+}
+
+.output > .title{
+    padding:  20px;
+    background-color: #B2BEB5;
+}
+
+.output > .title > p {
+    font-size: 20px;
+}
+
+.required{
+    color: red;
+    display: none;
+}
+
+.required.active{
+    display: block;
+}
