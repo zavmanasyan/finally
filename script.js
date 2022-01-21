@@ -81,6 +81,9 @@ function replace(){
       };
     });
   });
+}
+
+function change() {
   const option = document.querySelectorAll(".option");
   const select = document.querySelectorAll(".rl");
   select.forEach((select, index) => {
@@ -96,8 +99,9 @@ function replace(){
       option.innerHTML = select;
       arr.splice(index, 1, obj);
       builder(arr);
-          
     })
+    
   })
+
 };
 
